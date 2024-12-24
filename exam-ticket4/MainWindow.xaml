@@ -1,0 +1,25 @@
+﻿<Window x:Class="exam_ticket4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:exam_ticket4"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="weatherGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding date}"/>
+                <DataGridTextColumn Header="Мин температура" Binding="{Binding temp_min}"/>
+                <DataGridTextColumn Header="Макс темпетарута" Binding="{Binding temp_max}"/>
+                <DataGridTextColumn Header="Ощущается как" Binding="{Binding feels_like}"/>
+                <DataGridTextColumn Header="Температура воды" Binding="{Binding water_temp}"/>
+                <DataGridTextColumn Header="Влажность" Binding="{Binding humidity}"/>
+                <DataGridTextColumn Header="Давление" Binding="{Binding pressure}"/>
+                <DataGridTextColumn Header="Скорость ветра" Binding="{Binding wind_speed}"/>
+                <DataGridTextColumn Header="Направление ветра" Binding="{Binding wind_direction}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
