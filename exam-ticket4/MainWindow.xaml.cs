@@ -43,7 +43,7 @@ namespace exam_ticket4
         {
 
             var data = new List<Data>();
-            using (var con = new NpgsqlConnection("Host=ep-raspy-feather-a5jddzv9.us-east-2.aws.neon.tech;Database=ForExam;Username=ForExam_owner;Password=5McebrxlDG"))
+            using (var con = new NpgsqlConnection("Host=ep-raspy-feather-a5jddzv9.us-east-2.aws.neon.tech;Database=ForExam;Username=ForExam_owner;Password=5McebrxlDGK9"))
             {
                 con.Open();
                 using (var cmd = new NpgsqlCommand("SELECT * FROM weather.weather_data;", con))
